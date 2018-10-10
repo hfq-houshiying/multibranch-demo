@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         CI = 'true'
+        PATH = "$PATH:/usr/local/bin"
     }
     stages {
         stage('Build') {
