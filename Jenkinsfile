@@ -14,12 +14,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '/usr/local/bin/npm install'
+                sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                sh './jenkins/scripts/test.sh'
+                echo 'test'
             }
         }
         stage('Deliver for development') {
